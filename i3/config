@@ -187,7 +187,8 @@ exec_always --no-startup-id flameshot
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bar { 
-        font pango:monospace 11
+	position top        
+	font pango:monospace 11
 	status_command i3blocks -c ~/dotfiles/i3blocks/config
 }
 
