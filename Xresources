@@ -1,0 +1,14 @@
+!URXVT
+URxvt*scrollBar: false
+URxvt*depth: 32
+*background: Black
+*foreground: White
+!Rofi tenta usar essas fontes e nao consegue, por isso tem q especificar o terminal
+!*font:xft:Inconsolata:size=14:antialias=true
+URxvt.font:xft:Inconsolata:size=14:antialias=true
+!URxvt.perl-ext-common: ...,tabbed,...
+!URxvt.tabbed.tabbar-fg: 255
+!URxvt.tabbed.tabbar-bg: 0
+!URxvt.tabbed.tab-fg: 255
+!URxvt.tabbed.tab-bg: 0
+
