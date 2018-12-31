@@ -29,6 +29,9 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#lock screen
+bindsym $mod+Escape exec ~/scripts/lock.sh
+
 # ScreenShot gui
 bindsym Print exec flameshot gui
 
