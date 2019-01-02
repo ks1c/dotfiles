@@ -188,6 +188,7 @@ client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
 exec_always --no-startup-id ~/dotfiles/fehbg 
 exec_always --no-startup-id flameshot
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 
 bar { 
 	position top        
