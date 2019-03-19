@@ -7,9 +7,9 @@ gaps outer 5
 client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
 
 # Starting some things
-exec xrdb ~/dotfiles/Xresources
+exec --no-startup-id xrdb ~/dotfiles/Xresources
+exec --no-startup-id setlaptoptrackpad
 exec --no-startup-id flameshot
-exec xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 
 bar { 
 	position top        
