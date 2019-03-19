@@ -10,6 +10,7 @@ client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
 exec --no-startup-id xrdb ~/dotfiles/Xresources
 exec --no-startup-id setlaptoptrackpad
 exec --no-startup-id flameshot
+exec --no-startup-id dunst
 
 bar { 
 	position top        
