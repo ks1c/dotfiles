@@ -184,7 +184,7 @@ for_window [class="^.*"] border pixel 5
 gaps inner 5
 gaps outer 5
 client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
-
+exec xrdb ~/dotfiles/Xresources
 exec_always --no-startup-id ~/dotfiles/fehbg 
 exec_always --no-startup-id flameshot
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -193,7 +193,7 @@ exec xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 bar { 
 	position top        
 	font pango:monospace 11
-	status_command i3blocks -c ~/dotfiles/i3blocks/config
+	status_command i3blocks -c ~/.config/i3blocks
 }
 
 

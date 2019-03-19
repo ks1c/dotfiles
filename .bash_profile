@@ -1,10 +1,8 @@
 #
 # ~/.bash_profile
 #
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-exec fish
+# souce .bashrc at login
+#[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 	exec startx $HOME/dotfiles/xinitrc
