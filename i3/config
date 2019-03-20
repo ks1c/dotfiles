@@ -7,6 +7,7 @@ gaps outer 5
 client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
 
 # Starting some things
+exec --no-startup-id compton
 exec --no-startup-id xrdb ~/dotfiles/Xresources
 exec --no-startup-id setlaptoptrackpad
 exec --no-startup-id flameshot
