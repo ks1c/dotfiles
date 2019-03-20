@@ -1,12 +1,12 @@
-# Custom definitions
+#----- Custom definitions
 set $mod mod4
 font pango:monospace 8
 for_window [class="^.*"] border pixel 5
 gaps inner 5
 gaps outer 5
-client.focused          #4c7899 #285577 #ffffff #9ca380 #9ca380
+client.focused #4c7899 #285577 #ffffff #9ca380 #9ca380
 
-# Starting some things
+#----- Starting some things
 exec --no-startup-id setxkbmap -option altwin:swap_alt_win
 exec --no-startup-id compton
 exec --no-startup-id xrdb ~/dotfiles/Xresources
@@ -20,29 +20,60 @@ bar {
 	status_command i3blocks -c ~/.config/i3blocks
 }
 
-# Key bindings
-# Use Mouse+$mod to drag floating windows to their wanted position
+#----- Basic key bindings
 floating_modifier $mod
 
-#lock screen
-bindsym $mod+Escape exec ~/scripts/lock.sh
+bindsym $mod+Escape 			exec --no-startup-id ~/scripts/lock.sh
+#bindsym $mod+Shift+Escape 		exec --no-startup-id ~/scripts/lock.sh
 
-# ScreenShot gui
-bindsym Print exec flameshot gui
+bindsym Print 				exec --no-startup-id flameshot gui
+#bindsym Shift+Print 			exec --no-startup-id flameshot full -p $HOME
 
-# ScreenShot full screen
-bindsym Control+Print exec flameshot full -p $HOME
+bindsym $mod+Return 			exec --no-startup-id i3-sensible-terminal
+#bindsym $mod+Return 			exec --no-startuo-id i3-sensible-terminal
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+space 			focus mode_toggle
+bindsym $mod+Shift+space 		floating toggle
 
-#start file manager
-bindsym $mod+p exec pcmanfm
+#----- Letter key bindings
+bindsym $mod+q	 			kill
+#bindsym $mod+Shift+q 			TODO
 
-# kill focused window
-bindsym $mod+Shift+q kill
+#bindsym $mod+w	 			exec --no-startup-ud firefox
+#bindsym $mod+Shift+w	 		TODO
 
-# start dmenu (a program launcher)
+#bindsym $mod+e	 			TODO
+#bindsym $mod+Shift+e	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+t	 			TODO
+#bindsym $mod+Shift+t	 		TODO
+
+#bindsym $mod+y	 			TODO
+#bindsym $mod+Shift+y	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+#bindsym $mod+r	 			TODO
+#bindsym $mod+Shift+r	 		TODO
+
+
+
 # bindsym $mod+Shift+d exec dmenu_run -b -fn 'Inconsolata:pixelsize=17' -nb Black
 bindsym $mod+d exec rofi -theme dmenu -show drun
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -51,10 +82,10 @@ bindsym $mod+d exec rofi -theme dmenu -show drun
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -75,24 +106,13 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -169,4 +189,4 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
