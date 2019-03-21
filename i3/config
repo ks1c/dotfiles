@@ -4,7 +4,9 @@ font pango:monospace 8
 for_window [class="^.*"] border pixel 5
 gaps inner 5
 gaps outer 5
-client.focused #4c7899 #285577 #ffffff #9ca380 #9ca380
+
+#----- Colors
+client.focused #4c7899 #285577 #ffffff #9ca350 #9ca380
 
 #----- Starting some things
 exec --no-startup-id setxkbmap -option altwin:swap_alt_win
@@ -18,19 +20,23 @@ bar {
 	position top        
 	font pango:monospace 11
 	status_command i3blocks -c ~/.config/i3blocks
+	colors {
+		 focused_workspace  #9ca380 #000000 #9ca380
+		 inactive_workspace #000000 #000000 #9ca380
+	}
 }
 
 #----- Basic key bindings
 floating_modifier $mod
 
-bindsym $mod+Escape 			exec --no-startup-id lock #exec --no-startup-id ~/scripts/bin/lock
-#bindsym $mod+Shift+Escape 		exec --no-startup-id ~/scripts/lock.sh
+bindsym $mod+Escape 			exec --no-startup-id lock 
+#bindsym $mod+Shift+Escape 		TODO	
 
 bindsym Print 				exec --no-startup-id flameshot gui
-#bindsym Shift+Print 			exec --no-startup-id flameshot full -p $HOME
+#bindsym Shift+Print 			TODO	
 
 bindsym $mod+Return 			exec --no-startup-id i3-sensible-terminal
-#bindsym $mod+Return 			exec --no-startuo-id i3-sensible-terminal
+#bindsym $mod+Return 			TODO	
 
 bindsym $mod+space 			focus mode_toggle
 bindsym $mod+Shift+space 		floating toggle
@@ -42,13 +48,13 @@ bindsym $mod+q	 			kill
 bindsym $mod+w	 			exec --no-startup-id firefox
 #bindsym $mod+Shift+w	 		TODO
 
-#bindsym $mod+e	 			TODO
-#bindsym $mod+Shift+e	 		TODO
+bindsym $mod+e	 			exec --no-startup-id i3-sensible-terminal -e vifm 
+bindsym $mod+Shift+e	 		exec --no-startup-id i3-sensible-terminal -e ranger	
 
-bindsym $mod+r	 			exec --no-startup-id i3-sensible-terminal -e vifm	
-bindsym $mod+Shift+r	 		exec --no-startup-id i3-sensible-terminal -e ranger	
+#bindsym $mod+r	 			TODO 
+bindsym $mod+Shift+r	 	 	restart	
 
-bindsym $mod+t	 			split toggle	
+#bindsym $mod+t	 			TODO 
 #bindsym $mod+Shift+t	 		TODO
 
 #bindsym $mod+y	 			TODO
@@ -66,8 +72,8 @@ bindsym $mod+t	 			split toggle
 #bindsym $mod+p	 			TODO
 #bindsym $mod+Shift+p	 		TODO
 
-#bindsym $mod+a	 			TODO
-#bindsym $mod+Shift+a	 		TODO
+bindsym $mod+a	 			split toggle 
+bindsym $mod+Shift+a	 		focus parent 
 
 #bindsym $mod+s	 			TODO
 #bindsym $mod+Shift+s	 		TODO
@@ -103,7 +109,7 @@ bindsym $mod+Shift+l	 		move right
 #bindsym $mod+Shift+x	 		TODO
 
 #bindsym $mod+c	 			TODO
-#bindsym $mod+Shift+c			TODO
+bindsym $mod+Shift+c			reload 
 
 #bindsym $mod+v				TODO
 #bindsym $mod+Shift+v			TODO
@@ -127,23 +133,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-#bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
-# bindsym $mod+f fullscreen toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+#----- Workspaces
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -179,12 +169,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-# bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -211,4 +197,3 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-#bindsym $mod+r mode "resize"
