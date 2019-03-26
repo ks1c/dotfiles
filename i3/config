@@ -47,8 +47,8 @@ bindsym $mod+q	 			kill
 bindsym $mod+w	 			exec --no-startup-id $BROWSER
 #bindsym $mod+Shift+w	 		TODO
 
-bindsym $mod+e	 			exec --no-startup-id i3-sensible-terminal -e vifm 
-bindsym $mod+Shift+e	 		exec --no-startup-id i3-sensible-terminal -e ranger	
+bindsym $mod+e	 			exec --no-startup-id $TERMINAL -e vifm 
+bindsym $mod+Shift+e	 		exec --no-startup-id $TERMINAL -e ranger	
 
 #bindsym $mod+r	 			TODO 
 bindsym $mod+Shift+r	 	 	restart	
@@ -56,16 +56,16 @@ bindsym $mod+Shift+r	 	 	restart
 #bindsym $mod+t	 			TODO 
 #bindsym $mod+Shift+t	 		TODO
 
-#bindsym $mod+y	 			TODO
+bindsym $mod+y	 			exec --no-startup-id i3resize left
 #bindsym $mod+Shift+r	 		TODO
 
-#bindsym $mod+u	 			TODO
+bindsym $mod+u	 			exec --no-startup-id i3resize down
 #bindsym $mod+Shift+u	 		TODO
 
-#bindsym $mod+i	 			TODO
+bindsym $mod+i	 			exec --no-startup-id i3resize up
 #bindsym $mod+Shift+i	 		TODO
 
-#bindsym $mod+o	 			TODO
+bindsym $mod+o	 			exec --no-startup-id i3resize right
 #bindsym $mod+Shift+o	 		TODO
 
 #bindsym $mod+p	 			TODO
@@ -167,32 +167,3 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
-
-# exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
