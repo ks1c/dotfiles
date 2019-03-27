@@ -4,8 +4,9 @@ font pango:monospace 8
 for_window [class="^.*"] border pixel 5
 gaps inner 10 
 
-#----- Colors
-client.focused #4c7899 #285577 #ffffff #9ca350 #9ca380
+#----- Colors    #border #backgr #text   #indica #childb
+client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
+client.unfocused #333333 #222222 #888888 #292d2e #00000000
 
 #----- Starting some things
 exec --no-startup-id setxkbmap -option altwin:swap_alt_win
@@ -20,8 +21,10 @@ bar {
 	font pango:monospace 11
 	status_command i3blocks -c ~/.config/i3blocks
 	colors {
-		 focused_workspace  #9ca380 #000000 #9ca380
-		 inactive_workspace #000000 #000000 #9ca380
+		 statusline 	    #3282bd
+		 separator          #000000
+		 focused_workspace  #000000 #3282bd #000000
+		 inactive_workspace #000000 #000000 #3282bd
 	}
 }
 
