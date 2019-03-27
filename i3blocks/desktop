@@ -20,16 +20,12 @@
 # signal
 # urgent
 
-# Global properties
-#
-# The top properties below are applied to every block, but can be overridden.
-# Each block command defaults to the script name to avoid boilerplate.
 command=~/scripts/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
 [volume]
-label=VOL
+label=
 instance=Master
 interval=once
 signal=10
