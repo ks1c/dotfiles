@@ -31,7 +31,6 @@ interval=10
 
 [date]
 label=
-command=date '+%Y-%m-%d'
 interval=5
 separator=false
 
