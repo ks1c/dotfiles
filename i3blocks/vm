@@ -8,6 +8,10 @@ instance=Master
 interval=once
 signal=10
 
+[pacmanupgrades]
+color=#ff0000
+interval=10
+
 [memory]
 label=
 separator=false
