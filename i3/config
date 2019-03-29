@@ -4,13 +4,14 @@ font pango:monospace 8
 for_window [class="^.*"] border pixel 5
 gaps inner 10 
 
-#----- Conky windows configurations
+#----- Floating windows definitions
 for_window [title=conky] sticky enable
 for_window [title=conky] floating enable
 for_window [title=conky] border pixel 1 
 for_window [title="qtosd*"] sticky enable
 for_window [title="qtosd*"] floating enable
 for_window [title="qtosd*"] border pixel 1 
+for_window [title="qtosd*"] move position 0 px 0 px 
 
 #----- Colors    #border #backgr #text   #indica #childb
 client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
