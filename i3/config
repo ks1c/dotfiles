@@ -4,6 +4,11 @@ font pango:monospace 8
 for_window [class="^.*"] border pixel 5
 gaps inner 10 
 
+#----- Conky windows configurations
+for_window [title=conky] sticky enable
+for_window [title=conky] floating enable
+for_window [title=conky] border pixel 0 
+
 #----- Colors    #border #backgr #text   #indica #childb
 client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
 client.unfocused #333333 #222222 #888888 #292d2e #00000000
