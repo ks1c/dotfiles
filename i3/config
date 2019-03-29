@@ -8,6 +8,9 @@ gaps inner 10
 for_window [title=conky] sticky enable
 for_window [title=conky] floating enable
 for_window [title=conky] border pixel 1 
+for_window [title="qtosd*"] sticky enable
+for_window [title="qtosd*"] floating enable
+for_window [title="qtosd*"] border pixel 1 
 
 #----- Colors    #border #backgr #text   #indica #childb
 client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
