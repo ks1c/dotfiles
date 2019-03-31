@@ -28,7 +28,10 @@ command! reload :write | restart
 " Icons
 set classify='  :dir:/'
 set classify+='  ::*.png,,*.jpeg,,*.jpg,,*.bmp::'
-
+set classify+='  ::*.iso::'
+set classify+='  ::*.txt,,*.srt::'
+set classify+='  ::*.mp4,,*.avi,,*.mkv::'
+set classify+='  ::*.mp3::'
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
