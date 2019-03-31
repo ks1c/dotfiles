@@ -39,7 +39,7 @@ instance=/
 interval=5
 
 [iface]
-#label=
+label=
 #instance=wlan0
 color=#80b1d3
 interval=10

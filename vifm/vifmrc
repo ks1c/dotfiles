@@ -27,6 +27,7 @@ command! reload :write | restart
 
 " Icons
 set classify='  :dir:/'
+set classify+='  ::*.png,,*.jpeg,,*.jpg,,*.bmp::'
 
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
