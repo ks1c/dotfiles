@@ -3,15 +3,16 @@ font = Inconsolata 14
 scrollback_lines = 10000
 cursor_blink = off
 
-[colors] 
+[colors]
 
 # made with http://terminal.sexy
 
 # special
-foreground      = #b7b8b9
-foreground_bold = #b7b8b9
-cursor          = #b7b8b9
-background      = #0c0d0e
+foreground        = #b7b8b9
+foreground_bold   = #b7b8b9
+cursor            = #b7b8b9
+cursor_foreground = #9900cc
+background        = #0c0d0e
 
 # black
 color0  = #0c0d0e
