@@ -1,15 +1,15 @@
 [global]
     monitor = 0
     follow = keyboard
-    geometry = "0x5-10+34" 
+    geometry = "300x80-10+31"
     indicate_hidden = yes
-    shrink = yes
-    transparency = 0
-    notification_height = 0
+    shrink = no
+    transparency = 20
+    notification_height = 80
     separator_height = 2
-    padding = 0
+    padding = 8
     horizontal_padding = 8
-    frame_width = 3
+    frame_width = 0
     frame_color = "#aaaaaa"
     separator_color = frame
     sort = yes
@@ -20,14 +20,14 @@
     format = "<b>%s</b>\n%b"
     alignment = center
     show_age_threshold = 60
-    word_wrap = yes
+    word_wrap = no
     ellipsize = middle
     ignore_newline = no
     stack_duplicates = true
     hide_duplicate_count = true
     show_indicators = yes
     icon_position = left
-    max_icon_size = 40
+    max_icon_size = 64
     sticky_history = yes
     history_length = 20
     dmenu = /usr/bin/dmenu -p dunst:
@@ -48,13 +48,13 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#222222"
-    foreground = "#888888"
+    background = "#000000"
+    foreground = "#ffffff"
     timeout = 5
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffiffff"
+    background = "#ffffff"
+    foreground = "#000000"
     timeout = 5
 
 [urgency_critical]
@@ -75,8 +75,8 @@
 # foregroung = "#ff0000"    Will override default.
 # background = "#ff0000"    Will override default.
 # new_icon = name           Will override default.
-# format = "new content"    Will override default. Change the msg. Set to "" to ignore. 
+# format = "new content"    Will override default. Change the msg. Set to "" to ignore.
 # history_ignore = yes      Will override default.
 # script =                  Will be called as: script appname summary body icon urgency
- 
+
 # vim: ft=cfg
