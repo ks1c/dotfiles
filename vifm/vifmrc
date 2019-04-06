@@ -32,6 +32,13 @@ set classify+='  ::*.iso::'
 set classify+='  ::*.txt,,*.srt::'
 set classify+='  ::*.mp4,,*.avi,,*.mkv::'
 set classify+='  ::*.mp3::'
+set classify+='  ::*.sh::'
+set classify+='   ::*.cpp,,*.h,,*.hpp,,*.java,,*.py::'
+set classify+='  ::*.smc::'
+set classify+='  ::*.pdf::'
+set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
+set classify+='  ::*.jar::'
+
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
