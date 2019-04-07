@@ -71,7 +71,7 @@ bindsym $mod+Shift+e	 		exec --no-startup-id $TERMINAL -e ranger
 bindsym $mod+Shift+r	 	 	restart
 
 bindsym $mod+t	 			exec --no-startup-id telegram-desktop
-bindsym --release $mod+Shift+t	 	exec --no-startup-id telegram-desktop && xdotool key p && exec xdotool key KP_Enter
+bindsym --release $mod+Shift+t	 	exec --no-startup-id telegram-desktop && xdotool key p && xdotool key KP_Enter
 
 bindsym $mod+y	 			exec --no-startup-id i3resize left
 #bindsym $mod+Shift+y	 		TODO
