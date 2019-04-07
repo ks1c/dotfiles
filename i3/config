@@ -2,16 +2,20 @@
 set $mod mod4
 font pango:monospace 8
 for_window [class="^.*"] border pixel 5
-gaps inner 10 
+gaps inner 10
 
 #----- Floating windows definitions
+for_window [title=Telegram] sticky enable
+for_window [title=Telegram] floating enable
+for_window [title=Telegram] resize set 380 480
+for_window [title=Telegram] move position 770 px 300 px
 for_window [title=conky] sticky enable
 for_window [title=conky] floating enable
-for_window [title=conky] border pixel 1 
+for_window [title=conky] border pixel 1
 for_window [title="qtosd*"] sticky enable
 for_window [title="qtosd*"] floating enable
-for_window [title="qtosd*"] border pixel 1 
-for_window [title="qtosd*"] move position 0 px 0 px 
+for_window [title="qtosd*"] border pixel 1
+for_window [title="qtosd*"] move position 0 px 0 px
 
 #----- Colors    #border #backgr #text   #indica #childb
 client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
@@ -25,9 +29,9 @@ exec --no-startup-id setlaptoptrackpad
 exec --no-startup-id flameshot
 exec --no-startup-id dunst -config ~/dotfiles/dunstrc
 
-bar { 
+bar {
 	tray_output none
-	position top        
+	position top
 	font pango:monospace 11
 	status_command i3blocks -c ~/.config/i3blocks
 	colors {
@@ -41,14 +45,14 @@ bar {
 #----- Basic key bindings
 floating_modifier $mod
 
-bindsym $mod+Escape 			exec --no-startup-id lock 
-#bindsym $mod+Shift+Escape 		TODO	
+bindsym $mod+Escape 			exec --no-startup-id lock
+#bindsym $mod+Shift+Escape 		TODO
 
 bindsym Print 				exec --no-startup-id flameshot gui
-bindsym Shift+Print 			exec --no-startup-id flameshot full -p $HOME	
+bindsym Shift+Print 			exec --no-startup-id flameshot full -p $HOME
 
 bindsym $mod+Return 			exec --no-startup-id $TERMINAL
-#bindsym $mod+Return 			TODO	
+#bindsym $mod+Return 			TODO
 
 bindsym $mod+space 			focus mode_toggle
 bindsym $mod+Shift+space 		floating toggle
@@ -60,17 +64,17 @@ bindsym $mod+q	 			kill
 bindsym $mod+w	 			exec --no-startup-id $BROWSER
 #bindsym $mod+Shift+w	 		TODO
 
-bindsym $mod+e	 			exec --no-startup-id $TERMINAL -e vifm 
-bindsym $mod+Shift+e	 		exec --no-startup-id $TERMINAL -e ranger	
+bindsym $mod+e	 			exec --no-startup-id $TERMINAL -e vifm
+bindsym $mod+Shift+e	 		exec --no-startup-id $TERMINAL -e ranger
 
-#bindsym $mod+r	 			TODO 
-bindsym $mod+Shift+r	 	 	restart	
+#bindsym $mod+r	 			TODO
+bindsym $mod+Shift+r	 	 	restart
 
-#bindsym $mod+t	 			TODO 
-#bindsym $mod+Shift+t	 		TODO
+bindsym $mod+t	 			exec --no-startup-id telegram-desktop
+bindsym --release $mod+Shift+t	 	exec --no-startup-id telegram-desktop && xdotool key p && exec xdotool key KP_Enter
 
 bindsym $mod+y	 			exec --no-startup-id i3resize left
-#bindsym $mod+Shift+r	 		TODO
+#bindsym $mod+Shift+y	 		TODO
 
 bindsym $mod+u	 			exec --no-startup-id i3resize down
 #bindsym $mod+Shift+u	 		TODO
@@ -84,8 +88,8 @@ bindsym $mod+o	 			exec --no-startup-id i3resize right
 #bindsym $mod+p	 			TODO
 #bindsym $mod+Shift+p	 		TODO
 
-bindsym $mod+a	 			split toggle 
-bindsym $mod+Shift+a	 		focus parent 
+bindsym $mod+a	 			split toggle
+bindsym $mod+Shift+a	 		focus parent
 
 #bindsym $mod+s	 			TODO
 #bindsym $mod+Shift+s	 		TODO
@@ -93,7 +97,7 @@ bindsym $mod+Shift+a	 		focus parent
 bindsym $mod+d 				exec --no-startup-id rofi -theme dmenu -show drun
 bindsym $mod+Shift+d 			exec --no-startup-id dmenu_run -b -nb Black
 
-bindsym $mod+f	 			fullscreen toggle 
+bindsym $mod+f	 			fullscreen toggle
 #bindsym $mod+Shift+f	 		TODO
 
 #bindsym $mod+g	 			TODO
@@ -103,13 +107,13 @@ bindsym $mod+h	 			focus left
 bindsym $mod+Shift+h	 		move left
 
 bindsym $mod+j	 			focus down
-bindsym $mod+Shift+j	 		move down	
+bindsym $mod+Shift+j	 		move down
 
-bindsym $mod+k	 			focus up 
-bindsym $mod+Shift+k	 		move up	
+bindsym $mod+k	 			focus up
+bindsym $mod+Shift+k	 		move up
 
-bindsym $mod+l	 			focus right	
-bindsym $mod+Shift+l	 		move right	
+bindsym $mod+l	 			focus right
+bindsym $mod+Shift+l	 		move right
 
 #bindsym $mod+ç	 			TODO
 #bindsym $mod+Shift+ç	 		TODO
@@ -121,7 +125,7 @@ bindsym $mod+Shift+l	 		move right
 #bindsym $mod+Shift+x	 		TODO
 
 #bindsym $mod+c	 			TODO
-bindsym $mod+Shift+c			reload 
+bindsym $mod+Shift+c			reload
 
 #bindsym $mod+v				TODO
 #bindsym $mod+Shift+v			TODO
