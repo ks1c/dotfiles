@@ -38,6 +38,7 @@ set classify+='  ::*.smc::'
 set classify+='  ::*.pdf::'
 set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
 set classify+='  ::*.jar::'
+set classify+='  ::*.3ds::'
 
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
