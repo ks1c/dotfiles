@@ -1,5 +1,5 @@
 " vim: filetype=vifm :
-set vicmd=vim
+set vicmd=nvim
 set syscalls
 set nofollowlinks
 set sortnumbers
