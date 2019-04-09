@@ -56,8 +56,9 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 " ------------------------------------------------------------------------------
 
 " Icons
-set classify='  :dir:/'
-set classify+='  ::*.png,,*.jpeg,,*.jpg,,*.bmp::'
+set classify='  :link:,  :dir:/,  :exe:,  :reg:'
+set classify+='  ::../::/'
+set classify+='  ::*.png,,*.jpeg,,*.jpg,,*.bmp,,*.ico::'
 set classify+='  ::*.iso::'
 set classify+='  ::*.txt,,*.srt::'
 set classify+='  ::*.mp4,,*.avi,,*.mkv::'
@@ -67,7 +68,6 @@ set classify+='   ::*.cpp,,*.h,,*.hpp,,*.java,,*.py::'
 set classify+='  ::*.smc::'
 set classify+='  ::*.pdf::'
 set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
-set classify+='  ::*.jar::'
 set classify+='  ::*.3ds::'
 
 " Pdf
