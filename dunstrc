@@ -3,7 +3,7 @@
     follow = keyboard
     geometry = "300x80-10+31"
     indicate_hidden = yes
-    shrink = no
+    shrink = yes
     transparency = 20
     notification_height = 80
     separator_height = 2
