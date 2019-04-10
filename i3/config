@@ -8,7 +8,7 @@ gaps inner 10
 for_window [title=Telegram] sticky enable
 for_window [title=Telegram] floating enable
 for_window [title=Telegram] resize set 380 480
-for_window [title=Telegram] move position 770 px 300 px
+for_window [title=Telegram] move position center
 for_window [title=conky] sticky enable
 for_window [title=conky] floating enable
 for_window [title=conky] border pixel 1
