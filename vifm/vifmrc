@@ -74,7 +74,7 @@ set classify+='  ::*.3ds,,*.smc::'
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
-        \ sxiv %f
+        \ sxiv %f &
 fileviewer *.jpg,*.jpeg,*.png,*.ico ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Cant open
