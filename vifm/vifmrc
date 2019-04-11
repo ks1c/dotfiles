@@ -15,7 +15,7 @@ set nohlsearch
 set incsearch
 set scrolloff=4
 set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
-
+set confirm-=delete
 " ------------------------------------------------------------------------------
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
