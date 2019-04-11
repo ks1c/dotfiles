@@ -79,6 +79,7 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
         \ sxiv %f &
 fileviewer *.jpg,*.jpeg,*.png,*.ico ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+fileviewer *.gif ~/scripts/vifmimg.sh gifpreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
