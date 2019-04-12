@@ -72,14 +72,14 @@ set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
 set classify+='  ::*.3ds,,*.smc::'
 
 " ------------------------------------------------------------------------------
-fileviewer */ lsd %c --tree --icon=always --icon-theme=unicode
+fileview */ lsd %c --icon=always --icon-theme=unicode --group-dirs=first
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.gif
         \ {View in sxiv}
-        \ sxiv %f &
+        \ sxiv %f -ai &
 fileviewer *.jpg,*.jpeg,*.png,*.ico ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
-fileviewer *.gif ~/scripts/vifmimg.sh gifpreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+" fileviewer *.gif ~/scripts/vifmimg.sh gifpreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
