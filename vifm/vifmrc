@@ -27,8 +27,10 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
 command! ft :echo filetype( '.' )
+command! rp cw
 
 " ------------------------------------------------------------------------------
+nnoremap rp cw<c-u><s-ins>
 nnoremap s :!fish<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
@@ -38,6 +40,7 @@ nnoremap O :!gvim %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip %i<cr>
 nnoremap yf :!echo %c:p | xclip %i<cr>
+nnoremap yF :!echo %c | xclip %i<cr>
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
@@ -81,4 +84,5 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.gif
 fileviewer *.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
+filextype *.mp4,*.avi,*.mkv vlc %f &
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
