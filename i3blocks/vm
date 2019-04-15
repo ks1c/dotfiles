@@ -2,6 +2,10 @@ command=~/scripts/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[bandwidth]
+markup=pango
+interval=persist
+
 [volume]
 label=
 instance=Master
