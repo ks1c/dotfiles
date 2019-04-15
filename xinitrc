@@ -1,1 +1,1 @@
-exec i3 -c ~/dotfiles/i3/config
+exec i3 -c ~/dotfiles/i3/i3.config
