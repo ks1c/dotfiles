@@ -22,6 +22,7 @@ client.focused   #4c7899 #285577 #ffffff #80b1d3 #3282bd
 client.unfocused #333333 #222222 #888888 #292d2e #00000000
 
 #----- Starting some things
+exec --no-startup-id setwallpaper ~/wall.png
 exec --no-startup-id setxkbmap -option altwin:swap_alt_win
 exec --no-startup-id compton
 exec --no-startup-id xrdb ~/dotfiles/Xresources
