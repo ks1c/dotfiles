@@ -23,3 +23,4 @@ map <C-p> "+P
 autocmd BufWritePre * %s/\s\+$//e
 syntax on
 colorscheme dracula
+let g:airline_powerline_fonts = 1
