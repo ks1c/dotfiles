@@ -6,6 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mboughaba/i3config.vim'
+Plugin 'vifm/vifm.vim'
+Plugin 'dracula/vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -19,5 +21,4 @@ vnoremap <C-c> "+y
 map <C-p> "+P
 autocmd BufWritePre * %s/\s\+$//e
 syntax on
-
-
+colorscheme dracula
