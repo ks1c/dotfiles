@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'vifm/vifm.vim'
 Plugin 'dracula/vim'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
