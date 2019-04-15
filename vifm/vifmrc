@@ -60,6 +60,12 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks,bmarks
 
 " ------------------------------------------------------------------------------
+mark h ~/
+mark d ~/dotfiles
+mark s ~/scripts
+mark b ~/scripts/bin
+
+" ------------------------------------------------------------------------------
 " Icons
 set classify='  :link:,  :dir:/,  :exe:,  :reg:'
 set classify+='  ::../::/'
