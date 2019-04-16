@@ -16,6 +16,10 @@ signal=10
 color=#ff0000
 interval=10
 
+[newsboat]
+color=#ff0000
+interval=20
+
 [memory]
 label=
 separator=false
