@@ -1,4 +1,5 @@
 command=~/scripts/i3blocks/$BLOCK_NAME
+
 separator_block_width=15
 markup=none
 
@@ -16,9 +17,9 @@ signal=10
 color=#ff0000
 interval=10
 
-[newsboat]
+[rss]
 color=#ff0000
-interval=20
+interval=900
 
 [memory]
 label=
