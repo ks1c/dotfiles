@@ -12,6 +12,10 @@ signal=10
 color=#ff0000
 interval=10
 
+[rss]
+color=#ff0000
+interval=900
+
 [nvidia_usage]
 label=GPU
 interval=1
