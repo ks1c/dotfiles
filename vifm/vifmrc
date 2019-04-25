@@ -8,7 +8,7 @@ colorscheme ph.vifm
 set timefmt=%m/%d\ %H:%M
 set wildmenu
 set wildstyle=popup
-set suggestoptions=normal,visual,view,keys,marks,registers
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 set ignorecase
 set smartcase
 set nohlsearch
@@ -91,5 +91,5 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.gif
 fileviewer *.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
-filextype *.mp4,*.avi,*.mkv vlc %f &
+filextype *.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
