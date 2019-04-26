@@ -40,7 +40,7 @@ nnoremap O :!gvim %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip %i<cr>
 nnoremap yf :!echo %c:p | xclip %i<cr>
-nnoremap yF :!echo %c | xclip %i<cr>
+nnoremap yF :!echo %c | xclip -rmlastnl %i<cr>
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
