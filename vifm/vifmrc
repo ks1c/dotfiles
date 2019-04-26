@@ -27,10 +27,10 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
 command! ft :echo filetype( '.' )
-command! rp cw
 
 " ------------------------------------------------------------------------------
-nnoremap rp cw<c-u><s-ins>
+nnoremap rr :!rennoxt %f %c<cr>
+nnoremap rp :!renclipboardnoxt %c<cr>
 nnoremap s :!fish<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
