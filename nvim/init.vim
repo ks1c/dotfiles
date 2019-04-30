@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'vifm/vifm.vim'
 Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
@@ -22,5 +23,5 @@ vnoremap <C-c> "+y
 map <C-p> "+P
 autocmd BufWritePre * %s/\s\+$//e
 syntax on
-colorscheme dracula
+colorscheme gruvbox
 let g:airline_powerline_fonts = 1
