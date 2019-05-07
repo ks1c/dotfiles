@@ -25,3 +25,4 @@ autocmd BufWritePre * %s/\s\+$//e
 syntax on
 colorscheme gruvbox
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
