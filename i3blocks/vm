@@ -3,16 +3,6 @@ command=~/scripts/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-[bandwidth]
-markup=pango
-interval=persist
-
-[volume]
-label=
-instance=Master
-interval=once
-signal=10
-
 [pacmanupgrades]
 color=#ff0000
 interval=10
@@ -20,6 +10,12 @@ interval=10
 [rss]
 color=#ff0000
 interval=900
+
+[volume]
+label=
+instance=Master
+interval=once
+signal=10
 
 [memory]
 label=
