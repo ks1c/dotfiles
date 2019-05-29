@@ -3,3 +3,6 @@ vifminfo
 
 #gtk3
 gtk-3.0/bookmarks
+
+#nvim
+nvim/.netrwhist
