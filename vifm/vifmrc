@@ -93,3 +93,6 @@ fileviewer *.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw 
 " Videos
 filextype *.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+
+" RAR Archives
+fileviewer *.rar unrar vb %c
