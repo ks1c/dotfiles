@@ -95,4 +95,4 @@ filextype *.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
 fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Archives
-fileviewer *.jar,*.rar,*.zip,*.7z,*.zip,*.gz,*.tar bsdtar -tf %c
+fileviewer *.jar,*.rar,*.zip,*.7z,*.zip,*.gz,*.tar bsdtar -tf %c | cut -c -80
