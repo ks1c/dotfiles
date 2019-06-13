@@ -1,6 +1,6 @@
 command=~/scripts/i3blocks/$BLOCK_NAME
 separator_block_width=15
-markup=none
+markup=pango
 
 [volume]
 label=
