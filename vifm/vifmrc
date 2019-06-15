@@ -87,7 +87,7 @@ fileview */ lsd %c --icon=always --icon-theme=unicode --group-dirs=first
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.gif
         \ {View in sxiv}
-        \ sxiv %f -ai &
+        \ rifle_sxiv %f &
 fileviewer *.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
