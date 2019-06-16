@@ -96,6 +96,8 @@ fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %
 
 " Archives
 fileviewer *.jar,*.rar,*.zip,*.7z,*.zip,*.gz,*.tar bsdtar -tf %c | cut -c -80
+filextype *.zip,*.jar,*.gz,*.tar FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR
+filextype *.rar FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR
 
 " Pdf
 filextype *.pdf mupdf %f &
