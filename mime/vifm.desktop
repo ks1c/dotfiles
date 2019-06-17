@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Vifm
+Exec=$TERMINAL -e ~/scripts/vu.sh %u
+Type=Application
