@@ -1,4 +1,5 @@
 [Desktop Entry]
 Name=Vifm
-Exec=$TERMINAL -e ~/scripts/vu.sh %u
+Exec=vifm %F
+Terminal=true
 Type=Application
