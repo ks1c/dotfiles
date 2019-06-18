@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH=$PATH:$HOME/scripts/bin
+export PATH=$HOME/scripts/bin:$PATH
 export TERMINAL=termite
 export BROWSER=firefox
 
