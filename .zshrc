@@ -4,6 +4,29 @@ RPROMPT='%F{magenta}[ %f%T %F{magenta}]'
 autoload -Uz compinit
 compinit
 
+zstyle ':completion:*' completer _complete _match
+zstyle ':completion:*' glob 0
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' matcher-list '+m:{a-z}={A-Z} r:|[._-]=** r:|=**' '' '' '+m:{a-z}={A-Z} r:|[._-]=** r:|=**'
+zstyle ':completion:*' max-errors 1 numeric
+zstyle ':completion:*' substitute 0
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+zstyle :compinstall filename "$HOME/.zshrc"
+
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey "\e[3~" delete-char
+
+HISTSIZE=25000
+HISTFILE=~/.zsh_history
+SAVEHIST=100000
+
+export REPORTTIME=10
+
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ls -lah --color=auto'
