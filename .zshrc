@@ -32,6 +32,8 @@ alias ll='ls -lh --color=auto'
 alias la='ls -lah --color=auto'
 alias vim='nvim'
 
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
