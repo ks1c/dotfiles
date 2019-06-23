@@ -31,7 +31,7 @@ command! ft :echo filetype( '.' )
 " ------------------------------------------------------------------------------
 nnoremap rr :!rennoxt %f %c<cr>
 nnoremap rp :!renclipboardnoxt %c<cr>
-nnoremap s :!fish<cr>
+nnoremap s :!$SHELL<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
