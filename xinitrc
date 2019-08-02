@@ -11,4 +11,8 @@ birdtray &
 gdrive pull &
 
 # -- Start window manager
-exec i3 -c ~/dotfiles/i3/i3.config
+case $session in
+	i3  ) exec i3 -c ~/dotfiles/i3/i3.config;;
+	dwm ) exec dwm;;
+	*   ) exec dwm;;
+esac
