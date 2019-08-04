@@ -6,6 +6,6 @@
 [Desktop Entry]
 Name=Vifm
 #Exec=vifm %u
-Exec=termite -e 'vifm %u'
+Exec=$TERMINAL -e 'vifm %u'
 #Terminal=true
 Type=Application
