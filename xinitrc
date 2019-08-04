@@ -3,7 +3,7 @@
 dwmbar() {
 
 	while true; do
-		xsetroot -name "$(~/scripts/i3blocks/timedate)"
+		xsetroot -name "$(~/scripts/bar/timedate)"
 		sleep 1m
 	done
 }
