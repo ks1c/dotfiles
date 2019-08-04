@@ -1,5 +1,13 @@
 #!/bin/sh
 
+dwmbar() {
+
+	while true; do
+		xsetroot -name "$(~/scripts/i3blocks/timedate)"
+		sleep 1m
+	done
+}
+
 # -- Starting up some programs
 xwallpaper --zoom ~/wall.png &
 setxkbmap -option altwin:swap_alt_win &
@@ -13,6 +21,6 @@ gdrive pull &
 # -- Start window manager
 case $session in
 	i3  ) exec i3 -c ~/dotfiles/i3/i3.config;;
-	dwm ) exec dwm;;
-	*   ) exec dwm;;
+	dwm ) dwmbar & exec dwm;;
+	*   ) dwmbar & exec dwm;;
 esac
