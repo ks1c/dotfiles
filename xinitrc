@@ -4,7 +4,7 @@ dwmbar() {
 
 	while true; do
 		BARNAME="$(~/scripts/bar/disk2)"
-		BARNAME="$BARNAME $(~/scripts/bar/timedate)"
+		BARNAME="$BARNAME  $(~/scripts/bar/timedate)"
 		xsetroot -name "$BARNAME"
 		sleep 1m
 	done
