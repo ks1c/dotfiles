@@ -3,7 +3,9 @@
 dwmbar() {
 
 	while true; do
-		xsetroot -name "$(~/scripts/bar/timedate)"
+		BARNAME="$(~/scripts/bar/disk2)"
+		BARNAME="$BARNAME $(~/scripts/bar/timedate)"
+		xsetroot -name "$BARNAME"
 		sleep 1m
 	done
 }
