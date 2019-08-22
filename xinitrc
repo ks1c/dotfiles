@@ -12,6 +12,7 @@ dwmbar() {
 }
 
 # -- Starting up some programs
+sxhkd -c ~/sxhkdrc
 xwallpaper --zoom ~/wall.png &
 setxkbmap -option altwin:swap_alt_win &
 compton &
