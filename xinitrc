@@ -12,12 +12,12 @@ dwmbar() {
 }
 
 # -- Starting up some programs
-sxhkd -c ~/sxhkdrc
-xwallpaper --zoom ~/wall.png &
-setxkbmap -option altwin:swap_alt_win &
+sxhkd -c ~/dotfiles/sxhkdrc &
+xwallpaper --zoom ~/wall.png
+setxkbmap -option altwin:swap_alt_win
 compton &
-xrdb ~/dotfiles/Xresources &
-setlaptoptrackpad &
+xrdb ~/dotfiles/Xresources
+setlaptoptrackpad
 dunst -config ~/dotfiles/dunstrc &
 birdtray &
 gdrive pull &
