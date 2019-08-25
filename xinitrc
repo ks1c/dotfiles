@@ -1,16 +1,5 @@
 #!/bin/sh
 
-dwmbar() {
-
-	while true; do
-		BARNAME="$(~/scripts/bar/pacmanupgrades)"
-		BARNAME="$BARNAME  $(~/scripts/bar/disk2)"
-		BARNAME="$BARNAME  $(~/scripts/bar/timedate)"
-		xsetroot -name "$BARNAME"
-		sleep 1m
-	done
-}
-
 # -- Starting up some programs
 sxhkd -c ~/dotfiles/sxhkdrc &
 xwallpaper --zoom ~/wall.png
@@ -25,6 +14,6 @@ gdrive pull &
 # -- Start window manager
 case $session in
 	i3  ) exec i3 -c ~/dotfiles/i3/i3.config;;
-	dwm ) dwmbar & exec dwm;;
-	*   ) dwmbar & exec dwm;;
+	dwm ) ~/scripts/dwmbar.sh & exec dwm;;
+	*   ) ~/scripts/dwmbar.sh & exec dwm;;
 esac
