@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # -- Starting up some programs
-sxhkd -c ~/dotfiles/sxhkdrc &
 xwallpaper --zoom ~/wall.png
 setxkbmap -option altwin:swap_alt_win
 compton &
