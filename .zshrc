@@ -15,6 +15,9 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 zstyle :compinstall filename "$HOME/.zshrc"
 
+# Restore emacs bindkeys if EDITOR=vim
+bindkey -e
+
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
