@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# for cron jobs to send notifications
+echo $DBUS_SESSION_BUS_ADDRESS > ~/.dbusaddr
+
 # -- Starting up some programs
 xwallpaper --zoom ~/wall.png
 setxkbmap -option altwin:swap_alt_win
