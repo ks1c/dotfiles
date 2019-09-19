@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # for cron jobs to send notifications
-echo $DBUS_SESSION_BUS_ADDRESS > ~/.dbusaddr
+echo $DBUS_SESSION_BUS_ADDRESS > /tmp/dbusaddr
 
 # -- Starting up some programs
 xwallpaper --zoom ~/wall.png
