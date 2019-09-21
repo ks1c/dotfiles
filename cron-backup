@@ -1,4 +1,4 @@
 #@reboot env DBUS_SESSION_BUS_ADDRESS="$(cat /tmp/dbusaddr)" your_notify_script
-@reboot checkupdates | wc -l > /tmp/pacman_updates
+@reboot sleep 10 && checkupdates | wc -l > /tmp/pacman_updates
 @hourly checkupdates | wc -l > /tmp/pacman_updates
-@reboot crontab -l > ~/dotfiles/cron-backup
+@reboot sleep 10 && crontab -l > ~/dotfiles/cron-backup
