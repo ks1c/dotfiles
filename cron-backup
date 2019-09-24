@@ -6,8 +6,7 @@
 @hourly checkupdates | wc -l > /tmp/pacman_updates
 
 # check repositories commits
-@reboot sleep 10 && ~/scripts/bin/check_repositories > /tmp/check_repositories
-* * * * * ~/scripts/bin/check_repositories > /tmp/check_repositories
+* * * * * sleep 10 && ~/scripts/bin/check_repositories > /tmp/check_repositories
 
 # cron jobs backup list
 @reboot sleep 10 && crontab -l > ~/dotfiles/cron-backup
