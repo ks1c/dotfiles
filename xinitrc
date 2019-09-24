@@ -12,9 +12,12 @@ setlaptoptrackpad
 dunst -config ~/dotfiles/dunstrc &
 birdtray &
 
+# -- Start jobs after x
+gdrive pull &
+
 # -- Start window manager
 case $session in
 	i3  ) exec i3 -c ~/dotfiles/i3/i3.config;;
-	dwm ) while true; do dwmbar; sleep 1m; done & exec dwm;;
-	*   ) while true; do dwmbar; sleep 1m; done & exec dwm;;
+	dwm ) while true; do dwmbar; sleep 10; done & exec dwm;;
+	*   ) while true; do dwmbar; sleep 10; done & exec dwm;;
 esac
