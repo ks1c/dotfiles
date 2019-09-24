@@ -8,4 +8,4 @@
 */2 * * * * ~/scripts/bin/check_repositories
 
 # cron jobs backup list
-@reboot crontab -l > ~/dotfiles/cron-backup
+@daily crontab -l > ~/dotfiles/cron-backup
