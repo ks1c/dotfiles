@@ -1,12 +1,11 @@
-# check google drive
-@reboot sleep 10 && env DBUS_SESSION_BUS_ADDRESS="$(cat /tmp/dbusaddr)" ~/scripts/bin/gdrive pull
+# check rss feed
+*/15 * * * * env DBUS_SESSION_BUS_ADDRESS="$(cat /tmp/dbusaddr)" ~/scripts/bin/check_rss
 
 # pacman updates
-@reboot sleep 10 && checkupdates | wc -l > /tmp/pacman_updates && sleep 1 && ~/scripts/bin/dwmbar
 @hourly checkupdates | wc -l > /tmp/pacman_updates
 
 # check repositories commits
-* * * * * sleep 10 && ~/scripts/bin/check_repositories > /tmp/check_repositories && sleep 1 && ~/scripts/bin/dwmbar
+*/2 * * * * ~/scripts/bin/check_repositories
 
 # cron jobs backup list
-@reboot sleep 10 && crontab -l > ~/dotfiles/cron-backup
+@reboot crontab -l > ~/dotfiles/cron-backup
