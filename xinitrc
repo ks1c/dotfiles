@@ -11,7 +11,6 @@ xrdb ~/dotfiles/Xresources
 setlaptoptrackpad
 dunst -config ~/dotfiles/dunstrc &
 birdtray &
-gdrive pull &
 
 # -- Start window manager
 case $session in

@@ -1,4 +1,13 @@
-#@reboot env DBUS_SESSION_BUS_ADDRESS="$(cat /tmp/dbusaddr)" your_notify_script
+# check google drive
+@reboot sleep 10 && env DBUS_SESSION_BUS_ADDRESS="$(cat /tmp/dbusaddr)" ~/scripts/bin/gdrive pull
+
+# pacman updates
 @reboot sleep 10 && checkupdates | wc -l > /tmp/pacman_updates
 @hourly checkupdates | wc -l > /tmp/pacman_updates
+
+# check repositories commits
+@reboot sleep 10 && ~/scripts/bin/check_repositories > /tmp/check_repositories
+* * * * * ~/scripts/bin/check_repositories > /tmp/check_repositories
+
+# cron jobs backup list
 @reboot sleep 10 && crontab -l > ~/dotfiles/cron-backup
