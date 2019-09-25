@@ -1,4 +1,4 @@
-PROMPT='%F{magenta}[%f%n %F{blue}%B%1~%b%F{magenta}]%f '
+PROMPT='%F{magenta}[%f%F{cyan}%n%f %F{blue}%B%1~%b%F{magenta}]%f '
 RPROMPT='%F{magenta}[ %f%T %F{magenta}]'
 
 autoload -Uz compinit
