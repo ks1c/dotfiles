@@ -12,10 +12,11 @@ setlaptoptrackpad
 dunst -config ~/dotfiles/dunstrc &
 birdtray &
 
-# -- Start jobs after x
+# -- Start jobs after xorg initialize
 checkupdates | wc -l > /tmp/pacman_updates &
 check_repositories &
 gdrive pull &
+check_rss &
 
 # -- Start window manager
 case $session in
