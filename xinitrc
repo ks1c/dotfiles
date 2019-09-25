@@ -13,6 +13,8 @@ dunst -config ~/dotfiles/dunstrc &
 birdtray &
 
 # -- Start jobs after x
+checkupdates | wc -l > /tmp/pacman_updates &
+check_repositories &
 gdrive pull &
 
 # -- Start window manager
