@@ -76,10 +76,9 @@ set classify+='  ::*.mp4,,*.avi,,*.mkv::'
 set classify+='  ::*.mp3::'
 set classify+='  ::*.sh::'
 set classify+='  ::*.cpp,,*.h,,*.hpp,,*.java,,*.py::'
-set classify+='  ::*.smc::'
 set classify+='  ::*.pdf::'
 set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
-set classify+='  ::*.3ds,,*.smc::'
+set classify+='  ::*.cxi,,*.3ds,,*.smc::'
 
 " ------------------------------------------------------------------------------
 fileview */ lsd %c --icon=always --icon-theme=unicode --group-dirs=first
@@ -88,11 +87,11 @@ fileview */ lsd %c --icon=always --icon-theme=unicode --group-dirs=first
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.gif
         \ {View in sxiv}
         \ rifle_sxiv %f &
-fileviewer *.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Videos
-filextype *.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
-fileviewer *.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+filextype *.MOV,*.mpg,*.flv,*.wmv,*.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
+fileviewer *.MOV,*.mpg,*.flv,*.wmv,*.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Archives
 fileviewer *.jar,*.rar,*.zip,*.7z,*.zip,*.gz,*.tar bsdtar -tf %c | cut -c -80
