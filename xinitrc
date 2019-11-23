@@ -11,6 +11,7 @@ xrdb ~/dotfiles/Xresources
 setlaptoptrackpad
 dunst -config ~/dotfiles/dunstrc &
 birdtray &
+steam &
 
 # -- Start jobs after xorg initialize
 checkupdates | wc -l > /tmp/pacman_updates &
