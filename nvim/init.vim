@@ -24,6 +24,6 @@ vnoremap <C-c> "+y
 map <C-p> "+P
 autocmd BufWritePre * %s/\s\+$//e
 syntax on
-colorscheme gruvbox
+colorscheme dracula
 "let g:airline_powerline_fonts = 1
 "let g:airline#extensions#tabline#enabled = 1
