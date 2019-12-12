@@ -1,5 +1,5 @@
 "Vundle plugin manager
-set shell=/bin/bash
+set shell=/bin/zsh
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
