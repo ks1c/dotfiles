@@ -36,6 +36,7 @@ alias ll='ls -lh --color=auto'
 alias la='ls -lah --color=auto'
 alias vim='nvim'
 alias vifm='~/scripts/bin/vifmub'
+alias h='cd $HOME'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
