@@ -12,6 +12,7 @@
 	{ "keys": ["CTRL_L"], "type": "function", "command": "toggle_console" },
 	{ "keys": ["tm"], "type": "function", "command": "toggle_metadata" },
 	{ "keys": ["/"], "type": "prompt", "command": "search \"\"", "cursorPosition": -2 },
+	{ "keys": ["sy"], "type": "exec", "command": "sync", "cursorPosition": -2 },
 	{ "keys": ["mn"], "type": "prompt", "command": "mknote \"\"", "cursorPosition": -2 },
 	{ "keys": ["mt"], "type": "prompt", "command": "mktodo \"\"", "cursorPosition": -2 },
 	{ "keys": ["mb"], "type": "prompt", "command": "mkbook \"\"", "cursorPosition": -2 },
