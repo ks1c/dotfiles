@@ -15,7 +15,7 @@ call vundle#end()
 filetype plugin indent on
 
 "Basic configuration
-set number
+set nu rnu
 set mouse=a
 "set bg=light
 set wildmode=longest,list,full
