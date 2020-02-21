@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vifm/vifm.vim'
 Plugin 'dracula/vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 filetype plugin indent on
 
