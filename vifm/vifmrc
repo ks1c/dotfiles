@@ -29,6 +29,7 @@ command! reload :write | restart
 command! ft :echo filetype( '.' )
 
 " ------------------------------------------------------------------------------
+nnoremap <Space> <C-w>x<TAB>
 nnoremap rr :!rennoxt %f %c<cr>
 nnoremap rp :!renclipboardnoxt %c<cr>
 nnoremap s :!$SHELL<cr>
