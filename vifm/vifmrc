@@ -19,6 +19,7 @@ set confirm-=delete
 
 " ------------------------------------------------------------------------------
 command! df df -h %m 2> /dev/null
+command! du du -hs %c %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %f.zip %f
 command! run !! ./%f
