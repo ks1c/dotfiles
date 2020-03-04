@@ -32,14 +32,10 @@ command! ft :echo filetype( '.' )
 " ------------------------------------------------------------------------------
 nnoremap . za
 nnoremap <Space> <C-w>x<TAB>
-nnoremap rr :!rennoxt %f %c<cr>
-nnoremap rp :!renclipboardnoxt %c<cr>
 nnoremap s :!$SHELL<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
-nnoremap o :!gvim --remote-tab-silent %f<cr>
-nnoremap O :!gvim %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip %i<cr>
 nnoremap yf :!echo %c:p | xclip %i<cr>
@@ -49,7 +45,6 @@ nnoremap cc cw<c-u>
 nnoremap A cw
 nnoremap ,t :!xterm &<cr>
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
-nnoremap ,C :!gvim --remote-tab-silent $MYVIFMRC &<cr>
 nnoremap ,w :set wrap!<cr>
 nnoremap <f1> :!setwallpaper %f &<cr>
 nnoremap <f2> :!sendtopi %f<cr>
