@@ -72,7 +72,7 @@ set classify+='  ::*.png,,*.jpeg,,*.jpg,,*.bmp,,*.ico::'
 set classify+='  ::*.iso::'
 set classify+='  ::*.txt,,*.srt::'
 set classify+='  ::*.mp4,,*.avi,,*.mkv::'
-set classify+='  ::*.mp3::'
+set classify+='  ::*.mp3,,*.ogg::'
 set classify+='  ::*.sh::'
 set classify+='  ::*.cpp,,*.h,,*.hpp,,*.java,,*.py::'
 set classify+='  ::*.pdf::'
@@ -91,6 +91,9 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.ico,*.gif ~/scripts/vifmimg.sh draw %px %p
 " Videos
 filextype *.MOV,*.mpg,*.flv,*.wmv,*.mp4,*.avi,*.mkv mpv %f 2>/dev/null &
 fileviewer *.MOV,*.mpg,*.flv,*.wmv,*.mp4,*.avi,*.mkv ~/scripts/vifmimg.sh videopreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+
+" Audio
+filextype *.mp3,*.ogg mpv %f 2>/dev/null
 
 " Archives
 fileviewer *.jar,*.rar,*.zip,*.7z,*.zip,*.gz,*.tar bsdtar -tf %c | cut -c -80
