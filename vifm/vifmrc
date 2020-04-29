@@ -106,3 +106,6 @@ filextype *.rar FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR
 " Pdf
 filextype *.pdf mupdf %f &
 fileviewer *.pdf ~/scripts/vifmimg.sh pdfpreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
+
+" Libre Office
+filextype *.odt,*.doc,*.docx,*.xlx,*.xlsx libreoffice %f 2>/dev/null &
