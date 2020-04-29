@@ -79,7 +79,7 @@ set classify+='  ::*.cpp,,*.h,,*.hpp,,*.java,,*.py::'
 set classify+='  ::*.pdf::'
 set classify+='  ::*.zip,,*.rar,,*.7z,,*.7zip::'
 set classify+='  ::*.cxi,,*.3ds,,*.cia,,*.smc::'
-set classify+='  ::*.doc,,*.docx::'
+set classify+='  ::*.doc,,*.docx,,*.odt::'
 set classify+='  ::*.xlx,,*.xlsx::'
 
 " ------------------------------------------------------------------------------
