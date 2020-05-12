@@ -24,3 +24,5 @@ autocmd BufWritePre * %s/\s\+$//e
 syntax on
 colorscheme dracula
 let g:lightline = { 'colorscheme': 'dracula' }
+
+au BufNewFile,BufRead *.txt set tw=80
