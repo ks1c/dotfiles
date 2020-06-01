@@ -109,4 +109,4 @@ filextype *.pdf mupdf %f &
 fileviewer *.pdf ~/scripts/vifmimg.sh pdfpreview %px %py %pw %ph %c %pc ~/scripts/vifmimg.sh clear
 
 " Libre Office
-filextype *.odt,*.doc,*.docx,*.xlx,*.xlsx libreoffice %f 2>/dev/null &
+filextype *.odt,*.doc,*.docx,*.xlx,*.xlsx,*.xls libreoffice %f 2>/dev/null &
